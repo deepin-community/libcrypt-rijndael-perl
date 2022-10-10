@@ -1,0 +1,29 @@
+Source: libcrypt-rijndael-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Niko Tyni <ntyni@iki.fi>,
+           gregor herrmann <gregoa@debian.org>,
+           Damyan Ivanov <dmn@debian.org>,
+           Ansgar Burchardt <ansgar@debian.org>,
+           Xavier Guimard <yadd@debian.org>,
+           Salvatore Bonaccorso <carnil@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper-compat (= 13),
+               perl-xs-dev,
+               perl:native
+Standards-Version: 4.5.1
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libcrypt-rijndael-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libcrypt-rijndael-perl.git
+Homepage: https://metacpan.org/release/Crypt-Rijndael
+Rules-Requires-Root: no
+
+Package: libcrypt-rijndael-perl
+Architecture: any
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         ${shlibs:Depends}
+Description: Perl module implementing the Rijndael algorithm
+ Crypt::Rijndael is a Perl module that provides an XS-based implementation of
+ the Advanced Encryption Standard (AES) algorithm Rijndael, designed by Joan
+ Daemen and Vincent Rijmen.

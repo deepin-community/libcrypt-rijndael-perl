@@ -1,0 +1,4 @@
+version=4
+opts=uversionmangle=s/_/./g \
+https://metacpan.org/release/Crypt-Rijndael    .+/Crypt-Rijndael-(\d.*)\.tar\.gz
+
